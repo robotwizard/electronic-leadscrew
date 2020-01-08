@@ -40,7 +40,7 @@
 //================================================================================
 
 // For Imperial leadscrews: pitch in Threads Per Inch (TPI)
-#define LEADSCREW_TPI 12
+#define LEADSCREW_TPI 10
 
 // For metric leadscrews: pitch in hundredths of a millimeter (HMM)
 // Example: 200hmm = 2mm
@@ -64,15 +64,15 @@
 //================================================================================
 
 // Steps and microsteps
-#define STEPPER_MICROSTEPS 8
-#define STEPPER_RESOLUTION 200
+#define STEPPER_MICROSTEPS 3
+#define STEPPER_RESOLUTION 800
 
 // Separate Settings for feed rates, the normal ones are used for threading.
 // This is useful for lathes that do not use the leadscrew for power feed.
 // Note that the leadscrew setting is still used in the formulas, this is a
 // basic adjustment to scale the threading pulse rate.
 #define STEPPER_MICROSTEPS_FEED STEPPER_MICROSTEPS
-#define STEPPER_RESOLUTION_FEED STEPPER_RESOLUTION 
+#define STEPPER_RESOLUTION_FEED STEPPER_RESOLUTION * 1.66
 
 // Step, direction and enable pins are normally active-high
 // #define INVERT_STEP_PIN true
